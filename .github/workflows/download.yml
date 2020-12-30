@@ -11,17 +11,6 @@ jobs:
     - name: Archive code coverage results
       uses: actions/upload-artifact@v2
       with:
-        name: srcd
+        name: src
         path: src
-    - name: Download all workflow run artifacts
-      uses: actions/download-artifact@v2
-      id: aaa
-    - name: 'Echo download path'
-      run: echo ${{steps.aaa.outputs.download-path}}
-#     - uses: actions/download-artifact@v2
-#       id: download
-#       with:
-#         path: src
-
-#     - name: 'Echo download path'
-#       run: echo ${{steps.download.outputs.download-path}}
+  
