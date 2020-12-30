@@ -1,0 +1,17 @@
+name: Download all file
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-and-download:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: actions/download-artifact@v2
+      with:
+        name: my-artifact
+
+    - name: Display structure of downloaded files
+      run: ls -R
