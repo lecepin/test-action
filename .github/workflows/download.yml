@@ -7,10 +7,11 @@ jobs:
   build-and-download:
     runs-on: ubuntu-latest
     steps:
-    - name: get
-      run: |
-        npm i 
-        node main.js
+      - uses: actions/checkout@v2
+      - name: get
+        run: |
+          npm i 
+          node main.js
           
           
   
