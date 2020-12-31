@@ -23,9 +23,7 @@ Promise.all([
     },
     {
       name: "硬盘",
-      info: `${diskLayout[0].name} ${~~(
-        diskLayout[0].size / Math.pow(1024, 3)
-      )}GB`,
+      info: `${~~(diskLayout[0].size / Math.pow(1024, 3))}GB`,
     },
   ]);
 });
