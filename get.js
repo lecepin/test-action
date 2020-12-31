@@ -15,11 +15,11 @@ Promise.all([
     },
     {
       name: "处理器",
-      info: `${cpu.manufacturer} ${cpu.brand} ${cpu.speed}GHz 物理核心${cpu.physicalCores} 逻辑核心${cpu.cores}`,
+      info: `${cpu.manufacturer} ${cpu.brand} ${cpu.speed}GHz ${cpu.physicalCores}核`,
     },
     {
       name: "内存",
-      info: `${mem.total / Math.pow(1024, 3)}GB ${memLayout[0].type} ${
+      info: `${~~(mem.total / Math.pow(1024, 3))}GB ${memLayout[0].type} ${
         memLayout[0].clockSpeed
       }MHz`,
     },
