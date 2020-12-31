@@ -13,6 +13,7 @@ jobs:
       with:
         name: src
         path: |
-          src/*svg
+          @(src/*svg|src/*css)
+          
           
   
