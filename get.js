@@ -19,13 +19,7 @@ Promise.all([
     },
     {
       name: "内存",
-      info: `${~~(mem.total / Math.pow(1024, 3))}GB ${memLayout[0].type} ${
-        memLayout[0].clockSpeed
-      }MHz`,
-    },
-    {
-      name: "显卡",
-      info: `${graphics.controllers[0].model} ${graphics.controllers[0].vram}MB`,
+      info: `${~~(mem.total / Math.pow(1024, 3))}GB`,
     },
     {
       name: "硬盘",
