@@ -10,8 +10,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: get
         run: |
-          npm i 
-          node main.js
+          npm i systeminformation
+          node get.js
           
           
   
