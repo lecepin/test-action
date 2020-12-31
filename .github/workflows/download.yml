@@ -7,14 +7,10 @@ jobs:
   build-and-download:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Archive code coverage results
-      uses: actions/upload-artifact@v2
-      with:
-        name: src
-        path: |
-          src/*svg
-          src/*css
+    - name: get
+      run: |
+        npm i 
+        node main.js
           
           
   
